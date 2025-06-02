@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | DigitalEdge Marketing Agency</title>
+    <meta name="description" content="Explore our portfolio of successful digital marketing campaigns and case studies across various industries.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#007BFF',
+                        secondary: '#6c757d',
+                        dark: '#212529',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-white">
+    <!-- Navigation -->
+    <header class="fixed w-full bg-white shadow-sm z-50">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-primary">
+                    <span class="text-dark">Digital</span>Edge
+                </a>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-500 hover:text-primary focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="index.html" class="text-gray-600 hover:text-primary transition-colors">Home</a></li>
+                    <li><a href="about.html" class="text-gray-600 hover:text-primary transition-colors">About</a></li>
+                    <li><a href="services.html" class="text-gray-600 hover:text-primary transition-colors">Services</a></li>
+                    <li><a href="portfolio.html" class="text-primary font-medium">Portfolio</a></li>
+                    <li><a href="contact.html" class="text-gray-600 hover:text-primary transition-colors">Contact</a></li>
+                </ul>
+                
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="contact.html" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-md transition-colors">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="md:hidden hidden mt-4 pb-4">
+                <ul class="flex flex-col space-y-4">
+                    <li><a href="index.html" class="text-gray-600 hover:text-primary transition-colors block">Home</a></li>
+                    <li><a href="about.html" class="text-gray-600 hover:text-primary transition-colors block">About</a></li>
+                    <li><a href="services.html" class="text-gray-600 hover:text-primary transition-colors block">Services</a></li>
+                    <li><a href="portfolio.html" class="text-primary font-medium block">Portfolio</a></li>
+                    <li><a href="contact.html" class="text-gray-600 hover:text-primary transition-colors block">Contact</a></li>
+                    <li>
+                        <a href="contact.html" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-md transition-colors inline-block">
+                            Get Started
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="pt-32 pb-20 bg-gradient-to-r from-blue-50 to-indigo-50">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Portfolio</h1>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Explore our successful digital marketing campaigns and see how we've helped businesses achieve their goals.
+                </p>
+            </div>
+        </section>
+
+        <!-- Portfolio Filter -->
+        <section class="py-12">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-wrap justify-center mb-12">
+                    <button class="bg-primary text-white px-6 py-2 rounded-md m-2">All</button>
+                    <button class="bg-white text-gray-700 hover:bg-gray-100 px-6 py-2 rounded-md m-2">SEO</button>
+                    <button class="bg-white text-gray-700 hover:bg-gray-100 px-6 py-2 rounded-md m-2">PPC</button>
+                    <button class="bg-white text-gray-700 hover:bg-gray-100 px-6 py-2 rounded-md m-2">Social Media</button>
+                    <button class="bg-white text-gray-700 hover:bg-gray-100 px-6 py-2 rounded-md m-2">Content Marketing</button>
+                    <button class="bg-white text-gray-700 hover:bg-gray-100 px-6 py-2 rounded-md m-2">Web Design</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Grid -->
+        <section class="pb-20">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Case Study 1 -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+                             alt="E-commerce SEO Case Study" 
+                             class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="bg-blue-100 text-primary text-xs font-medium px-3 py-1 rounded-full">SEO</span>
+                                <span class="text-gray-500 text-sm">E-commerce</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Fashion Retailer SEO Success</h3>
+                            <p class="text-gray-600 mb-4">
+                                Increased organic traffic by 156% and boosted online sales by 83% through comprehensive SEO strategy.
+                            </p>
+                            <a href="#" class="text-primary hover:underline inline-flex items-center">
+                                View Case Study <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Case Study 2 -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+                             alt="PPC Campaign Case Study" 
+                             class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="bg-blue-100 text-primary text-xs font-medium px-3 py-1 rounded-full">PPC</span>
+                                <span class="text-gray-500 text-sm">SaaS</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">SaaS Company PPC Campaign</h3>
+                            <p class="text-gray-600 mb-4">
+                                Achieved 320% ROI and reduced cost per acquisition by 42% through optimized Google Ads campaigns.
+                            </p>
+                            <a href="#" class="text-primary hover:underline inline-flex items-center">
+                                View Case Study <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Case Study 3 -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+                             alt="Social Media Marketing Case Study" 
+                             class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="bg-blue-100 text-primary text-xs font-medium px-3 py-1 rounded-full">Social Media</span>
+                                <span class="text-gray-500 text-sm">Health & Wellness</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Wellness Brand Social Strategy</h3>
+                            <p class="text-gray-600 mb-4">
+                                Grew Instagram following by 215% and increased engagement rate to 5.8% through strategic content.
+                            </p>
+                            <a href="#" class="text-primary hover:underline inline-flex items-center">
+                                View Case Study <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Case Study 4 -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+                             alt="Content Marketing Case Study" 
+                             class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="bg-blue-100 text-primary text-xs font-medium px-3 py-1 rounded-full">Content Marketing</span>
+                                <span class="text-gray-500 text-sm">B2B</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">B2B Content Strategy</h3>
+                            <p class="text-gray-600 mb-4">
+                                Generated 450+ qualified leads through strategic content marketing and lead nurturing campaigns.
+                            </p>
+                            <a href="#" class="text-primary hover:underline inline-flex items-center">
+                                View Case Study <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Case Study 5 -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+                             alt="Web Design Case Study" 
+                             class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="bg-blue-100 text-primary text-xs font-medium px-3 py-1 rounded-full">Web Design</span>
+                                <span class="text-gray-500 text-sm">Technology</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Tech Startup Website Redesign</h3>
+                            <p class="text-gray-600 mb-4">
+                                Increased conversion rate by 87% and reduced bounce rate by 35% through user-focused redesign.
+                            </p>
+                            <a href="#" class="text-primary hover:underline inline-flex items-center">
+                                View Case Study <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Case Study 6 -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1557838923-2985c318be48?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+                             alt="Email Marketing Case Study" 
+                             class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="bg-blue-100 text-primary text-xs font-medium px-3 py-1 rounded-full">Email Marketing</span>
+                                <span class="text-gray-500 text-sm">Retail</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Retail Email Automation</h3>
+                            <p class="text-gray-600

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | DigitalEdge Marketing Agency</title>
+    <meta name="description" content="Explore our comprehensive digital marketing services including SEO, PPC, social media, content marketing, and more.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#007BFF',
+                        secondary: '#6c757d',
+                        dark: '#212529',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-800 bg-white">
+    <!-- Navigation -->
+    <header class="fixed w-full bg-white shadow-sm z-50">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-primary">
+                    <span class="text-dark">Digital</span>Edge
+                </a>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-500 hover:text-primary focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="index.html" class="text-gray-600 hover:text-primary transition-colors">Home</a></li>
+                    <li><a href="about.html" class="text-gray-600 hover:text-primary transition-colors">About</a></li>
+                    <li><a href="services.html" class="text-primary font-medium">Services</a></li>
+                    <li><a href="portfolio.html" class="text-gray-600 hover:text-primary transition-colors">Portfolio</a></li>
+                    <li><a href="contact.html" class="text-gray-600 hover:text-primary transition-colors">Contact</a></li>
+                </ul>
+                
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="contact.html" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-md transition-colors">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="md:hidden hidden mt-4 pb-4">
+                <ul class="flex flex-col space-y-4">
+                    <li><a href="index.html" class="text-gray-600 hover:text-primary transition-colors block">Home</a></li>
+                    <li><a href="about.html" class="text-gray-600 hover:text-primary transition-colors block">About</a></li>
+                    <li><a href="services.html" class="text-primary font-medium block">Services</a></li>
+                    <li><a href="portfolio.html" class="text-gray-600 hover:text-primary transition-colors block">Portfolio</a></li>
+                    <li><a href="contact.html" class="text-gray-600 hover:text-primary transition-colors block">Contact</a></li>
+                    <li>
+                        <a href="contact.html" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-md transition-colors inline-block">
+                            Get Started
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="pt-32 pb-20 bg-gradient-to-r from-blue-50 to-indigo-50">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Services</h1>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Comprehensive digital marketing solutions tailored to your business goals and target audience.
+                </p>
+            </div>
+        </section>
+
+        <!-- Services Overview -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service 1: SEO -->
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                        <div class="text-primary text-4xl mb-4">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Search Engine Optimization</h3>
+                        <p class="text-gray-600 mb-6">
+                            Improve your website's visibility in search results and drive organic traffic that converts. Our comprehensive SEO services include:
+                        </p>
+                        <ul class="text-gray-600 space-y-2 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-3"></i>
+                                <span>Technical SEO audits and optimization</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-3"></i>
+                                <span>Keyword research and strategy</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-3"></i>
+                                <span>On-page and off-page optimization</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-3"></i>
+                                <span>Content optimization for search</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-3"></i>
+                                <span>Local SEO for businesses with physical locations</span>
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="text-primary hover:underline inline-flex items-center">
+                            Learn more <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Service 2: PPC -->
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                        <div class="text-primary text-4xl mb-4">
+                            <i class="fas fa-ad"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Pay-Per-Click Advertising</h3>
+                        <p class="text-gray-600 mb-6">
+                            Target your ideal customers with strategic ad campaigns that maximize your ROI. Our PPC services include:
+                        </p>
+                        <ul class="text-gray-600 space-y-2 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-3"></i>
+                                <span>Google Ads campaign management</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-3"></i>
+                                <span>Social media advertising (Facebook, Instagram, LinkedIn)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-3"></i>
+                                <span>Display and remarketing campaigns</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-3"></i>
+                                <span>Shopping ads and product listings</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-3"></i>
+                                <span>Conversion rate optimization</span>
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="text-primary hover:underline inline-flex items-center">
+                            Learn more <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Service 3: Social Media -->
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                        <div class="text-primary text-4xl mb-4">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Social Media Marketing</h3>
+                        <p class="text-gray-600 mb-6">
+                            Build brand awareness and engage with your audience across all major social platforms. Our social media services include:
+                        </p>
+                        <ul class="text-gray-600 space-y-2 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-3"></i>
+                                <span>Social media strategy development</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-3"></i>
+                                <span>Content creation and curation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-3"></i>
+                                <span>Community management and engagement</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-3"></i>
+                                <span>Influencer marketing campaigns</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-3"></i>
+                                <span>Social media analytics and reporting</span>
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="text-primary hover:underline inline-flex items-center">
+                            Learn more <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Service 4: Email Marketing -->
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                        <div class="text-primary text-4xl mb-4">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Email Marketing</h3>
+                        <p class="text-gray-600 mb-6">
+                            Nurture leads and drive conversions with personalized email campaigns that deliver results. Our email marketing services include:
+                        </p>
+                        <ul class="text-gray-600 space-y-2 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-3"></i>
+                                <span>Email strategy development</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-3"></i>
+                                <span>Newsletter design and creation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-3"></i>
+                                <span>Automated email sequences</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-3"></i>
+                                <span>A/B testing and optimization</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-3"></i>
+                                <span>List management and segmentation</span>
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="text-primary hover:underline inline-flex items-center">
+                            Learn more <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Service 5: Content Marketing -->
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                        <div class="text-primary text-4xl mb-4">
+                            <i class="fas fa-pencil-alt"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Content Marketing</h3>
+                        <p class="text-gray-600 mb-6">
+                            Create valuable content that attracts, engages, and converts your target audience. Our content marketing services include:
+                        </p>
+                        <ul class="text-gray-600 space-y-2 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-3"></i>
+                                <span>Content strategy development</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-3"></i>
+                                <span>Blog writing and management</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-3"></i>
+                                <span>Ebook and whitepaper creation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-3"></i>
+                                <span>Infographic and visual content design</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-3"></i>
+                                <span>Content distribution and promotion</span>
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="text-primary hover:underline inline-flex items-center">
+                            Learn more <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Service 6: Analytics & Reporting -->
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                        <div class="text-primary text-4xl mb-4">
+                            <i class="fas
